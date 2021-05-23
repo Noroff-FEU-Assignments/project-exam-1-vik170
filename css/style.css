@@ -1,0 +1,190 @@
+:root {
+  --white: #ffffff;
+  --red: #ee2e2e;
+  --mangotango: ff8c42;
+  --corn: fff275;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.blog-card {
+  max-width: 100px;
+  max-width: 100px;
+}
+
+img {
+  max-width: 500px;
+  max-width: 500px;
+}
+.form_error {
+  display: none;
+  color: red;
+ 
+}
+
+.material-icons.md-36 {
+   font-size: 48px; }
+
+.font-styling {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+.font-styling-p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: var(--night_blue);
+}
+
+.color-white {
+  color: var(--white);
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.banner-height {
+  min-height: 40px;
+}
+
+a {
+  color: var(--white);
+
+}
+
+li a {
+  display: inline-block;
+  text-decoration: none;
+
+
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  
+}
+
+nav {
+  display: none;
+
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+#hamburger-menu li {
+  display: inline;
+}
+
+
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas:
+    "nav"
+    "content";
+}
+
+.content {
+  grid-area: content;
+}
+
+.navigation {
+  grid-area: nav;
+}
+
+.red-background {
+  background-color: var(--red);
+}
+
+.logo-font {
+  font-family: "Pattaya", sans-serif;
+  /* husk fallback font */
+}
+
+.center-logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 5px;
+}
+
+/* Global styles including mobile styles*/
+
+/* Media query for laptops*/
+@media only screen and (min-width: 768px) {
+}
+
+
+
+/* Media query for desktops*/
+@media only screen and (min-width: 1200px) {
+  .grid-wrapper {
+    display: grid;
+    
+    
+    grid-template-areas:
+      "nav nav nav"
+      ". content ."
+      "footer footer footer";
+    grid-template-columns: 1fr 3fr 3fr;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+
+
+ .banner-height {
+  height: 80px;
+}
+
+li {
+  float: left;
+  
+}
+
+a {
+ 
+ font-size: 30px;
+ height: 80px;
+
+ padding: 10px;
+
+}
+
+a:hover  {
+  color: aqua;
+}
+
+.fa-bars  {
+  display: none;
+}
+
+.footer 
+{ grid-area: footer;
+  position: absolute;
+  background-color:aqua;
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+  
+}
+
+}

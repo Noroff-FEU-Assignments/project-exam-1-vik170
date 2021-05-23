@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Burger Blog</title>
+    <meta name="description" content="A burger blog" />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="grid-wrapper">
+   <header class="navigation red-background banner-height">
+       <h1 class="center-logo logo-font color-white">Burger Blog</h1>
+        <div>
+          <label for="hamburger-menu"><i class="material-icons md-36 color-white">menu</i></label>
+          <input type="checkbox" id="hamburger-menu" />
+            <nav>
+            <ul class="text-align-center color-white font-styling">
+              <li><a class="selected" href="./index.html">Home</a></li>
+              <li><a class="" href="./blogs.html">Blogs</a></li>
+              <li><a class="" href="./about.html">About</a></li>
+              <li><a class="" href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="content">
+      <h1>Latest posts</h1>  
+      
+
+      
+        <div class="blog"></div>
+
+
+        <div><i class="material-icons">arrow_back</i></div>
+        <div><i class="material-icons">arrow_forward</i></div>
+
+      </section>
+
+
+    <script src="./components/querySelector.js"></script>
+    <script src="./js/script.js" async defer></script>
+    <footer class="footer"></footer>
+  </body>
+</html>
